@@ -25,8 +25,7 @@ This site showcases my projects, skills, and experience as an **IEEE Member**, *
 
 ---
 
-## 📸 Preview
-![Portfolio Screenshot](images/preview.png)
+
 
 ---
 
