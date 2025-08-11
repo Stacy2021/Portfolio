@@ -1,0 +1,180 @@
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for section navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #e6f7f8; /* light turquoise */
+  color: #333;
+}
+
+/* Navigation Bar */
+header {
+  background: linear-gradient(to right, #00c4cc, #4de1e8);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #003f44;
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.section:nth-child(odd) {
+  background-color: #d0f4f6;
+}
+
+h1, h2 {
+  color: #007b80;
+  margin-bottom: 20px;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Home Section */
+.home-section {
+  background: linear-gradient(to bottom right, #00c4cc, #66f0f4);
+  color: white;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* CV Button */
+.cv-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #007b80;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cv-button:hover {
+  background-color: #003f44;
+  color: white;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.project h3 {
+  color: #007b80;
+}
+
+/* Skills */
+.skills-section ul {
+  list-style: none;
+}
+
+.skills-section li {
+  background-color: #bff4f7;
+  padding: 10px;
+  margin: 8px auto;
+  max-width: 400px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Experience */
+.experience-section ul {
+  list-style: none;
+}
+
+.experience-section li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #bff4f7;
+  border-radius: 5px;
+}
+
+/* Contact */
+.contact-section p {
+  margin: 10px 0;
+}
+
+.contact-section a {
+  color: #007b80;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #003f44;
+}
+
+.contact-section i {
+  margin-right: 8px;
+  color: #007b80;
+}
+
+/* Footer */
+footer {
+  background-color: #00c4cc;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
