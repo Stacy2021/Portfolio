@@ -67,34 +67,92 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <article class="project-card">
-        <h3><span class="icon"><i class="fas fa-gears"></i></span> DIY CNC Machine </h3>
-        <p>A CNC machine with XYZ movement manipulated for various functions.</p>
-      </article>
-      <article class="project-card">
-        <h3><span class="icon"><i class="fas fa-baby"></i></span> Maternal &amp; Fetal Monitor</h3>
-        <p>Wearable belt with biomedical sensors for monitoring contractions and fetal heart rate, integrated with a web dashboard for remote clinics.</p>
-      </article>
-       <article class="project-card">
-        <h3><span class="icon"><i class="fas fa-layer-group"></i></span> Yarn thickness modular device</h3>
-        <p> A device that measures the thickness of yarn to be part of a machine used for reeling of yarn.</p>
-      </article>
+ <!-- Projects -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2>Embedded Systems Projects</h2>
 
-      <article class="project-card">
-        <h3><span class="icon"><i class="fas fa-home"></i></span> Smart Home Automation</h3>
-        <p>Arduino-based automation system controlling lighting and appliances via sensors and mobile app, enhancing energy efficiency in homes.</p>
-      </article>
+    <!-- FEATURED PROJECT -->
+    <article class="project-card featured-project">
+      <h3><span class="icon"><i class="fas fa-baby"></i></span> Maternal &amp; Fetal Monitoring System</h3>
 
-      <article class="project-card">
-        <h3><span class="icon"><i class="fas fa-heartbeat"></i></span> IoT Heartbeat Monitor</h3>
-        <p>Pulse sensor with cloud connectivity (ThingSpeak) for real-time data tracking and potential medical alerts.</p>
-      </article>
-    </div>
-  </section>
+      <p><strong>System Overview:</strong> Designed a wearable embedded system for real-time monitoring of fetal heart rate and maternal contractions.</p>
+
+      <p><strong>Firmware Development:</strong> Developed embedded C++ firmware for continuous sensor sampling, signal filtering, and data processing. Implemented threshold-based alert logic.</p>
+
+      <p><strong>Hardware Integration:</strong> Integrated pulse and contraction sensors with microcontroller-based processing unit. Designed modular architecture for scalable sensor expansion.</p>
+
+      <p><strong>Communication:</strong> Implemented IoT-based data transmission to a web dashboard for remote monitoring.</p>
+
+      <p><strong>Embedded Focus:</strong> Optimized timing loops for stable sampling intervals and reduced signal noise through basic filtering techniques.</p>
+
+    </article>
+
+
+    <!-- CNC MACHINE -->
+    <article class="project-card">
+      <h3><span class="icon"><i class="fas fa-gears"></i></span> CNC Motion Control System</h3>
+
+      <p><strong>Objective:</strong> Develop a microcontroller-driven XYZ motion control platform.</p>
+
+      <p><strong>Low-Level Control:</strong> Configured stepper motor drivers (A4988) and implemented step/mm calibration for precise motion control.</p>
+
+      <p><strong>Firmware:</strong> Integrated GRBL firmware and customized motion parameters to improve positioning accuracy.</p>
+
+      <p><strong>Performance:</strong> Achieved repeatable motion accuracy of approximately ±0.2mm through calibration and current tuning.</p>
+
+      <p><strong>Embedded Focus:</strong> Worked with motor driver timing signals, pulse generation, and hardware-level debugging.</p>
+
+    </article>
+
+
+    <!-- YARN DEVICE -->
+    <article class="project-card">
+      <h3><span class="icon"><i class="fas fa-layer-group"></i></span> Yarn Thickness Measurement Module</h3>
+
+      <p><strong>System Goal:</strong> Develop an embedded sensing module for real-time thickness detection during mechanical reeling.</p>
+
+      <p><strong>Signal Processing:</strong> Implemented sensor data acquisition and basic conditioning to ensure measurement repeatability.</p>
+
+      <p><strong>Embedded Design:</strong> Focused on stable ADC readings, noise minimization, and integration compatibility with mechanical subsystems.</p>
+
+      <p><strong>Result:</strong> Improved quality consistency and reduced dependency on manual inspection.</p>
+
+    </article>
+
+
+    <!-- SMART HOME -->
+    <article class="project-card">
+      <h3><span class="icon"><i class="fas fa-home"></i></span> Smart Home Embedded Automation</h3>
+
+      <p><strong>Objective:</strong> Build a microcontroller-based automation system for intelligent appliance control.</p>
+
+      <p><strong>Firmware:</strong> Developed event-driven control logic using sensor-triggered interrupts and conditional automation routines.</p>
+
+      <p><strong>Hardware:</strong> Integrated relay modules, motion sensors, and temperature sensors with embedded control logic.</p>
+
+      <p><strong>Connectivity:</strong> Implemented IoT integration for remote state monitoring and control.</p>
+
+    </article>
+
+
+    <!-- IOT HEARTBEAT -->
+    <article class="project-card">
+      <h3><span class="icon"><i class="fas fa-heartbeat"></i></span> IoT Heart Rate Monitoring System</h3>
+
+      <p><strong>Objective:</strong> Design a real-time physiological signal acquisition system with cloud logging capability.</p>
+
+      <p><strong>Embedded Focus:</strong> Implemented analog signal sampling, ADC conversion, and structured data transmission to ThingSpeak.</p>
+
+      <p><strong>Optimization:</strong> Improved signal stability through sampling rate adjustments and filtering logic.</p>
+
+      <p><strong>Application:</strong> Demonstrated potential for remote telehealth monitoring applications.</p>
+
+    </article>
+
+  </div>
+</section>
+
 
   <!-- Skills -->
   <section id="skills" class="section skills-section">
