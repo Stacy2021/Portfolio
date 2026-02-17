@@ -17,13 +17,13 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #e6f7f8; /* light turquoise */
+  background-color: #e6f7f8; /* light turquoise for light mode */
   color: #333;
 }
 
 /* Navigation Bar */
 header {
-  background: linear-gradient(to right, #004e89, #0077b6); /* restored dark blue gradient */
+  background: linear-gradient(to right, #004e89, #0077b6); /* dark blue gradient */
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -86,10 +86,19 @@ p {
   margin: 0 auto 20px;
 }
 
-/* Home Section */
+/* Home Section (Top Hero) */
 .home-section {
   background: linear-gradient(to bottom right, #004e89, #0077b6);
   color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.home-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-pic {
@@ -97,8 +106,13 @@ p {
   height: 180px;
   border-radius: 50%;
   border: 5px solid white;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   object-fit: cover;
+}
+
+.home-text {
+  max-width: 700px;
+  text-align: center;
 }
 
 .intro-text {
@@ -121,6 +135,18 @@ p {
 .cv-btn:hover {
   background-color: #003f44;
   color: white;
+}
+
+/* Social Icons Row */
+.social-row a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-row a:hover {
+  color: #00f5d4;
 }
 
 /* Projects */
@@ -233,6 +259,10 @@ body.dark-mode nav ul li a:hover {
   color: #00f5d4;
 }
 
+body.dark-mode .home-section {
+  background: #003f44; /* dark blue in dark mode as well */
+}
+
 body.dark-mode .section:nth-child(even) {
   background-color: #2a2a2a;
 }
@@ -244,12 +274,6 @@ body.dark-mode .section:nth-child(odd) {
 body.dark-mode .project-card,
 body.dark-mode .skills-section li,
 body.dark-mode .experience-section li {
-  background-color: #333;
-  color: #ddd;
-}
-
-body.dark-mode footer {
-  background-color: #003f44;
-}
+  background-co
 
 }
