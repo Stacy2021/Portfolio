@@ -17,13 +17,13 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #e6f7f8; /* light turquoise for light mode */
+  background-color: #ffffff; /* white background to match sections */
   color: #333;
 }
 
 /* Navigation Bar */
 header {
-  background: linear-gradient(to right, #004e89, #0077b6); /* dark blue gradient */
+  background: #004e89; /* dark blue header */
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -66,14 +66,11 @@ nav ul li a:hover {
 .section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #ffffff; /* match Home section */
 }
 
 .section:nth-child(even) {
-  background-color: #ffffff;
-}
-
-.section:nth-child(odd) {
-  background-color: #d0f4f6;
+  background-color: #f5f5f5; /* light gray for contrast */
 }
 
 h1, h2 {
@@ -88,8 +85,8 @@ p {
 
 /* Home Section (Top Hero) */
 .home-section {
-  background: linear-gradient(to bottom right, #004e89, #0077b6);
-  color: white;
+  background-color: #ffffff; /* now same as other sections */
+  color: #004e89;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -105,7 +102,7 @@ p {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 5px solid #004e89;
   margin-bottom: 20px;
   object-fit: cover;
 }
@@ -124,8 +121,8 @@ p {
 .cv-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: white;
-  color: #004e89;
+  background-color: #004e89;
+  color: white;
   font-weight: bold;
   border-radius: 30px;
   text-decoration: none;
@@ -134,13 +131,12 @@ p {
 
 .cv-btn:hover {
   background-color: #003f44;
-  color: white;
 }
 
 /* Social Icons Row */
 .social-row a {
   margin: 0 10px;
-  color: white;
+  color: #004e89;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
@@ -153,7 +149,7 @@ p {
 .project-card {
   margin-bottom: 40px;
   padding: 20px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   text-align: left;
@@ -174,7 +170,7 @@ p {
 }
 
 .project-img {
-  width: 180px;  /* uniform size */
+  width: 180px;
   height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -259,16 +255,10 @@ body.dark-mode nav ul li a:hover {
   color: #00f5d4;
 }
 
+body.dark-mode .section,
 body.dark-mode .home-section {
-  background: #003f44; /* dark blue in dark mode as well */
-}
-
-body.dark-mode .section:nth-child(even) {
-  background-color: #2a2a2a;
-}
-
-body.dark-mode .section:nth-child(odd) {
-  background-color: #1f1f1f;
+  background-color: #1f1f1f; /* unified dark background */
+  color: #ddd;
 }
 
 body.dark-mode .project-card,
@@ -280,6 +270,4 @@ body.dark-mode .experience-section li {
 
 body.dark-mode footer {
   background-color: #003f44;
-}
-
 }
